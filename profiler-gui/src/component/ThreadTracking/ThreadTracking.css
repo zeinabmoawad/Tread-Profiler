@@ -1,0 +1,44 @@
+.ant-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ant-table-thead > tr > th,
+.ant-table-tbody > tr > td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Equal column widths */
+.ant-table-thead > tr > th {
+  width: calc(100% / 7);
+}
+
+/* State-specific row styles */
+.state-ready {
+  background-color: lightgreen; 
+  color: white; 
+}
+
+.state-finish {
+  background-color: lightskyblue; 
+  color: white; 
+}
+
+.state-wait {
+  background-color: lightgrey; 
+  color: white; 
+}
+
+.ant-table-tbody > tr:hover {
+  background-color:white;
+  color: black;
+}
+
+.ant-table-tbody > tr:hover .state-ready,
+.ant-table-tbody > tr:hover .state-finish,
+.ant-table-tbody > tr:hover .state-wait {
+  background-color:white; 
+  color: black; 
+}
